@@ -36,6 +36,10 @@ platforms:
       config:
         install: ovn-small.json
         benchmarks: small-light.json
+    - name: ovn-small-cp
+      config:
+        install: ovn-small.json
+        benchmarks: small-control-plane.json
 
   # Do not program concurrent builds of ROSA/ROGCP/ARO
   rosa:
