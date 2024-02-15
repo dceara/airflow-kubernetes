@@ -32,7 +32,7 @@ platforms:
     versions: ["4.16"]
     providers: ["aws"]
     variants:
-    - name: dceara-3-light
+    - name: ovn-3-light
       config:
         install: ovn-small.json
         benchmarks: small-light.json
@@ -40,6 +40,18 @@ platforms:
       config:
         install: ovn-small.json
         benchmarks: small-control-plane.json
+    - name: ovn-120-light
+      config:
+        install: ovn-120.json
+        benchmarks: ovn-120-density-light.json
+    - name: ovn-120-cni
+      config:
+        install: ovn-120.json
+        benchmarks: ovn-120-density-cni.json
+    - name: ovn-120-cluster-density
+      config:
+        install: ovn-120.json
+        benchmarks: ovn-120-cluster-density.json
 
   # Do not program concurrent builds of ROSA/ROGCP/ARO
   rosa:
