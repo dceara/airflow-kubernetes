@@ -52,6 +52,18 @@ platforms:
       config:
         install: ovn-120.json
         benchmarks: ovn-120-cluster-density.json
+    - name: ovn-250-light
+      config:
+        install: ovn-250.json
+        benchmarks: ovn-250-density-light.json
+    - name: ovn-250-cni
+      config:
+        install: ovn-250.json
+        benchmarks: ovn-250-density-cni.json
+    - name: ovn-250-cluster-density
+      config:
+        install: ovn-250.json
+        benchmarks: ovn-250-cluster-density.json
 
   # Do not program concurrent builds of ROSA/ROGCP/ARO
   rosa:
