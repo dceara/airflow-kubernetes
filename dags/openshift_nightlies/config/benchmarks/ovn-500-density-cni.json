@@ -1,0 +1,52 @@
+{
+    "benchmarks": [
+        {
+            "name": "scale-24",
+            "workload": "scale-perf",
+            "command": "./run_scale_fromgit.sh",
+            "env": {
+                "SCALE": "24",
+                "METADATA_COLLECTION": "false",
+                "WORKLOAD_NODE_ROLE": "worker"
+            }
+        },
+        {
+            "name": "scale-120",
+            "workload": "scale-perf",
+            "command": "./run_scale_fromgit.sh",
+            "env": {
+                "SCALE": "120",
+                "METADATA_COLLECTION": "false",
+                "WORKLOAD_NODE_ROLE": "worker"
+            }
+        },
+        {
+            "name": "scale-252",
+            "workload": "scale-perf",
+            "command": "./run_scale_fromgit.sh",
+            "env": {
+                "SCALE": "252",
+                "METADATA_COLLECTION": "false",
+                "WORKLOAD_NODE_ROLE": "worker"
+            }
+        },
+        {
+            "name": "scale-504",
+            "workload": "scale-perf",
+            "command": "./run_scale_fromgit.sh",
+            "env": {
+                "SCALE": "504",
+                "METADATA_COLLECTION": "false",
+                "WORKLOAD_NODE_ROLE": "worker"
+            }
+        },
+        {
+            "name": "node-density-cni",
+            "workload": "kube-burner-ocp-wrapper",
+            "command": "./run.sh",
+            "env": {
+                "WORKLOAD": "node-density-cni"
+            }
+        }
+    ]
+}
