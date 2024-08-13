@@ -21,22 +21,23 @@
             }
         },
         {
-            "name": "scale-250",
+            "name": "scale-252",
             "workload": "scale-perf",
             "command": "./run_scale_fromgit.sh",
             "env": {
-                "SCALE": "250",
+                "SCALE": "252",
                 "METADATA_COLLECTION": "false",
                 "WORKLOAD_NODE_ROLE": "worker"
             }
         },
         {
-            "name": "node-density",
+            "name": "cluster-density-v2",
             "workload": "kube-burner-ocp-wrapper",
             "command": "./run.sh",
             "env": {
-                "WORKLOAD": "node-density",
-                "EXTRA_FLAGS": "--pods-per-node=240 --pod-ready-threshold=5s --timeout=2h"
+                "WORKLOAD": "cluster-density-v2",
+                "ITERATIONS": "2250",
+                "EXTRA_FLAGS": "--timeout=6h"
             }
         }
     ]

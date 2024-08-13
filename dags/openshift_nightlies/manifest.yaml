@@ -64,6 +64,10 @@ platforms:
       config:
         install: ovn-250.json
         benchmarks: ovn-250-cluster-density.json
+    - name: ovn-250-cluster-density-churn
+      config:
+        install: ovn-250.json
+        benchmarks: ovn-250-cluster-density-churn.json
     - name: ovn-500-light
       config:
         install: ovn-500.json

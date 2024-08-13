@@ -36,8 +36,8 @@
             "command": "./run.sh",
             "env": {
                 "WORKLOAD": "cluster-density-v2",
-                "ITERATIONS": "2268",
-                "EXTRA_FLAGS": "--timeout=6h"
+                "ITERATIONS": "2250",
+                "EXTRA_FLAGS": "--churn-duration=10m --timeout=6h"
             }
         }
     ]
