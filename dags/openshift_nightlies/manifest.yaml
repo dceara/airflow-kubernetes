@@ -29,7 +29,7 @@ dagConfig:
 
 platforms:
   cloud:
-    versions: ["4.16"]
+    versions: ["4.15"]
     providers: ["aws"]
     variants:
     - name: ovn-3-light
